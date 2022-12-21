@@ -12,7 +12,8 @@ export const ButtonContainner = styled.button`
 
     ${({variant})=> variant !== "primary" && css `
         min-width: 167px;
-        heigth:33px;
+        heigth: 275px;
+        height: 33px;
 
         background: #E4105D;
 

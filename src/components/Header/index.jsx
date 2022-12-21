@@ -46,9 +46,3 @@ const Header = ({autenticado}) => {
 }
 
 export { Header }
-
-/*<Row>
-<MenuRight href="#">Home</MenuRight>
-<Button title="Entrar"/>
-<Button title="Cadastrar"/>
-</Row>*/
