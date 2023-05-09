@@ -4,7 +4,7 @@ export const CardContainer = styled.div `
     width: 100%;
     background-color: #3b4651;
     position: relative;
-    margin=bottom: 24px; 
+    margin: 24px 0 24px 0; 
 `
 
 export const ImageBackground = styled.img `

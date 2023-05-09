@@ -15,8 +15,18 @@ export const Wrapper = styled.div `
     max-width: 400px;
 `
 
-export const Column = styled.div `
+export const LeftColumn = styled.div `
     flex: 1;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+`
+
+export const RightColumn = styled.div `
+    flex: 1;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
 `
 
 export const Row = styled.div `

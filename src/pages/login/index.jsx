@@ -10,7 +10,7 @@ import { Input } from "../../components/Input";
 
 import { api } from '../../services/api';
 
-import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
+import { LeftColumn, RightColumn, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
 
 const schema = yup.object({
     email: yup.string().email('Email não é válido').required('Campo obrigatório'),
@@ -42,13 +42,13 @@ const Login = () => {
     return (<>
         <Header />
             <Container>
-                <Column>
+                <LeftColumn>
                     <Title>
                        A plataforma para você aprender com experts, dominar as principais tecnologias 
                        e entrar mais rápido nas empresas mais desejadas.
                     </Title>
-                </Column>
-                <Column>
+                </LeftColumn>
+                <RightColumn>
                     <Wrapper>
                         <TitleLogin>Faça seu cadastro</TitleLogin>
                         <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
@@ -62,7 +62,7 @@ const Login = () => {
                             <CriarText>Criar conta</CriarText>
                         </Row>
                     </Wrapper> 
-                </Column>
+                </RightColumn>
             </Container>
     </>)
 }

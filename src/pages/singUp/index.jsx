@@ -8,7 +8,7 @@ import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 
-import { Container, Column, Title, Wrapper, TitleCadastre, SubTitleCadastre, Row, CriarText, FazerLogin, Link  } from './styles';
+import { Container, LeftColumn, RightColumn, Title, Wrapper, TitleCadastre, SubTitleCadastre, Row, CriarText, FazerLogin, Link  } from './styles';
 
 const schema = yup.object({
     email: yup.string().email('Email não é válido').required('Campo obrigatório'),
@@ -32,14 +32,14 @@ const SingUp = () => {
    
     return (<>
        <Header/>
-         <Container>
-            <Column>
+         < Container>
+            <LeftColumn>
                 <Title>
                     A plataforma para você aprender com experts, dominar as principais tecnologias 
                     e entrar mais rápido nas empresas mais desejadas.
                 </Title>
-            </Column>
-            <Column>
+            </LeftColumn>
+            <RightColumn>
                 <Wrapper>
                     <TitleCadastre>Comece agora grátis</TitleCadastre>
                     <SubTitleCadastre>Crie sua conta e make the chance._</SubTitleCadastre>
@@ -59,7 +59,7 @@ const SingUp = () => {
                         <FazerLogin>Já tenho conta. <Link href="/login">Fazer login</Link></FazerLogin>
                     </Row>
                 </Wrapper>
-            </Column>
+            </RightColumn>
          </Container>
      
     </>)
